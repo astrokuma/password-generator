@@ -1,0 +1,22 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate a random <span class="highlight">secure password</span></h1>
+            <div class="toggle-container">
+                <button id="numbers-toggle" class="toggle-on" onclick="numbersToggle()">Numbers On</button>
+                <button id="symbols-toggle" class="toggle-on" onclick="symbolsToggle()">Symbols On</button>
+            </div>
+            <button id="generate" onclick="generatePassword()">Generate Password</button>
+            <div class="hr"></div>
+            <p>Your secure password:</p>
+            <div class="toggle-container">
+                <p id="password"></p>
+                <button disabled class="toggle-on disabled" id="copy" onclick="copyText()">Copy</button>
+            </div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
