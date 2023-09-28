@@ -96,6 +96,26 @@ button, p {
     color: #0fb980;
 }
 
+.custom-alert {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0a0f14;
+    color: white;
+    outline: 2px solid wheat;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+    width: 90%;
+    max-width: 30em;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
 @media only screen and (min-width: 600px) {
     body {
         padding: 2em;
@@ -111,5 +131,9 @@ button, p {
     h1 {
         font-size: 2.5em;
         margin-bottom: .4em;
+    }
+    .custom-alert{
+        top:10px;
+        bottom: auto;
     }
 }
